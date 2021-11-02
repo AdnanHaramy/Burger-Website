@@ -1,0 +1,62 @@
+section {
+    background-color: #e7f2f1;
+}
+h1 {
+    text-align: center;
+    color: #be4ce1;
+}
+h2 {
+    text-align: center;
+}
+.appDevelopment,.Design,.research{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.appDevelopment{color: #fe6686;}
+.Design {color: #7fdcb3;}
+.research{color: #fe9a3f;}
+.blogCard {
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 50%;
+    height: 150px;
+    border-radius: 10px;
+}
+h4{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+.dummyText {
+    font-weight: normal;
+}
+p {
+    text-align: center;
+    font-size: 10px;
+
+}
+.blogCardRow{
+    margin: 0 auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    height: 20px;
+    background-color: green;
+    width: 70%;
+}
+.roundedCornerDiv {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    float: left;
+}
+.blogCardText{
+    margin: 0px;
+    padding-top: 4px;
+}
