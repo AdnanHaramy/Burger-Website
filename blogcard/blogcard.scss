@@ -1,0 +1,41 @@
+h1 {
+    color: #be4ce1;
+}
+h1,h2,p,h4{ 
+    text-align: center;
+}
+.appDevelopment,.Design,.research,p{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.blogCard {
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+}
+.blogCard:hover {
+    transform: scale(1.05);
+}
+@media (min-width:700px) { 
+    .blogCard {
+        width: 27%;
+    }
+    .appDevelopment,.Design,.research,h4{
+        font-size: 18px;
+    }
+}
+h4{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.dummyText {
+    font-weight: normal;
+}
+
