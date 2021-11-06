@@ -1,0 +1,29 @@
+.blogSectionContainer {
+   background-image: linear-gradient(to right, #eaf3f2 , #f1f0ee , #e8ecf0);
+}
+.blogHeading1,.blogHeading2{
+    text-align: center;
+}
+.blogHeading2 {
+    margin-top: -15px;
+}
+@media (min-width:700px) {
+    .blogCardContainer {
+        display: flex;
+        flex-direction: row;
+        
+    } 
+    .blogHeading1,.blogHeading2{
+        text-align: start;
+        margin-left: 3.2%;
+    }
+}
+.red{
+    color: #fe859e;
+}
+.green {
+    color: #5fd7a5;
+}
+.orange {
+    color: #fe9a3f;
+}
