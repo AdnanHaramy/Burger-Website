@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali-Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="employees.css">
+</head>
+<body>
+    <div class="navBar" >
+        <div id="nav-container1">
+            <p id="navText">
+                Ali-Bank
+            </p>
+        </div>
+        <div class="nav-container2">
+            <a href="home.html">
+                <p id="navText-2" >Home</p>
+            </a>
+            <a href="Services.html">
+                <p id="navText-3" >Services</p>
+
+            </a>
+        </div>
+     </div>
+     <div id="employees-container">
+         <div class="employee">
+             <img src="employee1.jpg" alt="">
+             <div class="timer" >
+                 <span id="countdowntimer1" ></span>
+             </div>
+         </div>
+         <div class="employee">
+            <img src="employee2.jpeg" alt="">
+            <div class="timer" >
+                <span id="countdowntimer2"></span>
+            </div>
+        </div>
+        <div class="employee">
+            <img src="employee3.webp" alt="">
+            <div class="timer" >
+                <span id="countdowntimer3"></span>
+            </div>
+        </div>
+     </div>
+     <div id="active-employee-container">
+         <img src="employee1.jpg" alt="">
+         <div class="balance-box">
+             <div class="balance">
+                 <p id="balance-text">
+                     <span id="money" ></span> ان رصيدك الحالي هو 
+                 </p>
+             </div>
+             <div class="balance">
+                 <p id="balance-text">
+                     قم بادخال المبلغ الذي تريد ايداعه
+                 </p>
+             </div>
+             <div class="input-container">
+                <form action="">
+                    <input type="text" id="input-value" >
+                </form>
+                <button id="styled-button" onclick="deposit()">
+                    ايداع 
+                </button>
+            </div>
+         </div>
+     </div>
+
+    <script type="text/javascript">
+    var timeleft = 5; 
+    var downloadTimer = setInterval(function(){
+        timeleft -- ;
+        document.getElementById("countdowntimer1").textContent = timeleft;
+
+        if (timeleft == 0) {
+            clearInterval(downloadTimer)
+        }
+        if(timeleft == 0) {
+            document.getElementById('employees-container').style.visibility = 'hidden';
+            document.getElementById('active-employee-container').style.visibility ='visible';
+        }
+    },1000)
+    var timeleft2 = 37; 
+    var downloadTimer = setInterval(function(){
+        timeleft2 -- ;
+        document.getElementById("countdowntimer2").textContent = timeleft2;
+
+        if (timeleft2 == 0) {
+            clearInterval(downloadTimer)
+        }
+        if(timeleft2 == 0) {
+            document.getElementById('employees-container').style.visibility = 'hidden';
+            document.getElementById('active-employee-container').style.visibility ='visible';
+
+    }
+    },1000)
+    var timeleft3 = 52; 
+    var downloadTimer = setInterval(function(){
+        timeleft3 -- ;
+        document.getElementById("countdowntimer3").textContent = timeleft3;
+
+        if (timeleft3 == 0) {
+            clearInterval(downloadTimer)
+        }
+        if(timeleft3 == 0) {
+            document.getElementById('employees-container').style.visibility = 'hidden';
+            document.getElementById('active-employee-container').style.visibility ='visible';
+        }
+    },1000)
+   
+    </script>
+    <script src="account.js"></script>
+</body>
+</html>
